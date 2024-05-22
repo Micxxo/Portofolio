@@ -1,0 +1,77 @@
+import { delay, motion as m } from "framer-motion";
+
+export default function BottomShadowGreet() {
+  const filterAnimate = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+      },
+    },
+  };
+  return (
+    <>
+      <m.svg
+        width="378"
+        height="102"
+        viewBox="0 0 378 102"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        variants={filterAnimate}
+        initial="initial"
+        animate="animate"
+      >
+        <g filter="url(#filter0_d_5_161)">
+          <ellipse cx="189" cy="28" rx="189" ry="28" fill="black" />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_5_161"
+            x="0"
+            y="0"
+            width="378"
+            height="102"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feMorphology
+              radius="11"
+              operator="erode"
+              in="SourceAlpha"
+              result="effect1_dropShadow_5_161"
+            />
+            <feOffset dy="50" />
+            <feGaussianBlur stdDeviation="3.5" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0.891667 0 0 0 0 0.891667 0 0 0 0 0.891667 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_5_161"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_5_161"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </m.svg>
+    </>
+  );
+}
