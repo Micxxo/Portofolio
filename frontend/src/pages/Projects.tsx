@@ -1,7 +1,6 @@
 import { motion as m, useInView } from "framer-motion";
 import { projectDatas } from "@/lib/helper/datas";
-import Star from "@/components/general/Star";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper/modules";
@@ -43,56 +42,6 @@ export default function Projects() {
     }),
   };
 
-  const projectsAnimation = {
-    initial: {
-      opacity: 0,
-      x: -5,
-    },
-    inView: (i: number) => ({
-      opacity: 1,
-      x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        duration: 1,
-        delay: i * 0.2,
-      },
-    }),
-  };
-
-  const projectTitleAnimation = {
-    initial: {
-      opacity: 0,
-      y: -10,
-    },
-    inView: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        duration: 0.8,
-        delay: i * 0.2,
-      },
-    }),
-  };
-
-  const projectDescAnimation = {
-    initial: {
-      opacity: 0,
-      y: 10,
-    },
-    inView: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        duration: 0.8,
-        delay: 0.2 + i * 0.2,
-      },
-    }),
-  };
-
-  // Hook to track if elements are in view
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 

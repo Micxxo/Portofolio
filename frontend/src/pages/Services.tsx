@@ -1,4 +1,4 @@
-import { AnimatePresence, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import me from "../assets/images/me_5.png";
 import { servicesData } from "@/lib/helper/datas";
 

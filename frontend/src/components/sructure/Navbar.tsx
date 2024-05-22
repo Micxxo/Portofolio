@@ -1,12 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { MdMailOutline } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
-import { animate, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 export default function Navbar() {
-  const navigate = useNavigate();
-
   const containerAnimate = {
     initial: {
       y: -100,

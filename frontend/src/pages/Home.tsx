@@ -1,5 +1,3 @@
-import Layout from "@/components/sructure/Layout";
-import shadowHeader from "../assets/images/shadow-header.png";
 import { AnimatePresence, motion as m } from "framer-motion";
 import BottomShadowGreet from "@/components/general/BottomShadowGreet";
 import { useState, useEffect } from "react";

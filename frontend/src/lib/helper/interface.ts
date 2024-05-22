@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface layoutProps {
   children: React.ReactNode;
   className?: string;

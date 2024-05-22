@@ -1,10 +1,8 @@
-import { motion as m, useInView } from "framer-motion";
+import { motion as m } from "framer-motion";
 import { projectDatas } from "@/lib/helper/datas";
 import "swiper/css";
 import "swiper/css/scrollbar";
-import { useRef } from "react";
 import { CardContainer } from "@/components/3dCard/CardContainer";
-import CardBody from "@/components/3dCard/CardBody";
 import CardItem from "@/components/3dCard/CardItem";
 import { MouseEnterContextProvider } from "@/components/general/MouseEnterContext";
 

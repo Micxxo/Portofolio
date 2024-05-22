@@ -2,7 +2,6 @@ import { aboutData } from "@/lib/helper/datas";
 import Star from "@/components/general/Star";
 import CountUp from "react-countup";
 import { motion as m } from "framer-motion";
-import { useState, useEffect } from "react";
 import ExpSlider from "@/components/general/ExpSlider";
 
 export default function About() {

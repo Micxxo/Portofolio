@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import { layoutProps } from "@/lib/helper/interface";
 import { twMerge } from "tailwind-merge";
-import Star from "../general/Star";
 
 export default function Layout({ children, className }: layoutProps) {
   return (

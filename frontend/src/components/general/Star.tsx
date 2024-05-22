@@ -1,6 +1,6 @@
 import { starProps } from "@/lib/helper/interface";
 import { twMerge } from "tailwind-merge";
-import { delay, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 export default function Star({ className, height, width }: starProps) {
   const svgAnimation = {
