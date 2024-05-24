@@ -35,5 +35,3 @@ export interface CardItemProps {
   rotateZ?: number;
   index: number;
 }
-
-type tes = {};
