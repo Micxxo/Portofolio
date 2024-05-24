@@ -2,8 +2,9 @@ import Layout from "@/components/sructure/Layout";
 import Home from "./Home";
 import Services from "./Services";
 import About from "./About";
-import Skills from "./Skills";
-import ProjectPage from "./Project/Main";
+import SkillsPage from "./Skills/page";
+import ProjectPage from "./Project-Certificate/Main";
+import Footer from "./Footer";
 
 export default function Page() {
   return (
@@ -12,7 +13,8 @@ export default function Page() {
       <Services />
       <About />
       <ProjectPage />
-      <Skills />
+      <SkillsPage />
+      <Footer />
     </Layout>
   );
 }

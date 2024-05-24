@@ -25,10 +25,12 @@ export default function Navbar() {
       className="fixed top-0 w-full max-w-[1440px] xl:mx-auto p-5 md:py-8 md:px-14 z-10 "
     >
       <div className="flex items-center justify-between">
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <a href="/">
+          <Avatar>
+            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </a>
         <div className="flex items-center gap-5">
           <Button
             variant="default"
