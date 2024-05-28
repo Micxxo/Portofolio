@@ -68,6 +68,18 @@ export default function Home() {
               >
                 FEBRIAN
               </m.h1>
+
+              <m.div
+                exit={{
+                  opacity: 0,
+                  transition: {
+                    duration: 1.5,
+                  },
+                }}
+                className="relative -top-8  -z-0"
+              >
+                <BottomShadowGreet />
+              </m.div>
             </>
           )}
 
@@ -94,6 +106,18 @@ export default function Home() {
               >
                 DEVELOPER
               </m.h1>
+
+              <m.div
+                exit={{
+                  opacity: 0,
+                  transition: {
+                    duration: 1.5,
+                  },
+                }}
+                className="relative -top-8 left-0 md:left-4 -z-0"
+              >
+                <BottomShadowGreet />
+              </m.div>
             </>
           )}
 
@@ -120,50 +144,19 @@ export default function Home() {
               >
                 ENGINEER
               </m.h1>
+
+              <m.div
+                exit={{
+                  opacity: 0,
+                  transition: {
+                    duration: 1.5,
+                  },
+                }}
+                className="relative -top-8 left-0 md:left-4 -z-0"
+              >
+                <BottomShadowGreet />
+              </m.div>
             </>
-          )}
-        </AnimatePresence>
-        <AnimatePresence>
-          {greet === "name" && (
-            <m.div
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 1.5,
-                },
-              }}
-              className="relative -top-8  -z-0"
-            >
-              <BottomShadowGreet />
-            </m.div>
-          )}
-
-          {greet === "role" && (
-            <m.div
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 1.5,
-                },
-              }}
-              className="relative -top-8 left-0 md:left-4 -z-0"
-            >
-              <BottomShadowGreet />
-            </m.div>
-          )}
-
-          {greet === "role2" && (
-            <m.div
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 1.5,
-                },
-              }}
-              className="relative -top-8 left-0 md:left-4 -z-0"
-            >
-              <BottomShadowGreet />
-            </m.div>
           )}
         </AnimatePresence>
       </div>
