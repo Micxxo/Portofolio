@@ -5,6 +5,8 @@ import "swiper/css/scrollbar";
 import { CardContainer } from "@/components/3dCard/CardContainer";
 import CardItem from "@/components/3dCard/CardItem";
 import { MouseEnterContextProvider } from "@/components/general/MouseEnterContext";
+import ProjCetSlider from "./Slider";
+import ProjCertSlider from "./Slider";
 
 export default function ProjectPage() {
   const titleAnimation = {
@@ -43,7 +45,7 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className="snap-start h-[800px] md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-x-auto md:overflow-hidden pb-10">
+    <div className="snap-start h-[800px] md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-x-auto md:overflow-hidden pb-16">
       <div className="px-5 md:px-0 md:pl-14 pt-20 md:pt-24">
         <m.h1
           variants={titleAnimation}
@@ -66,7 +68,7 @@ export default function ProjectPage() {
       </div>
 
       <MouseEnterContextProvider>
-        <div className="mt-0 md:mt-8 block space-y-5 md:space-y-0 md:flex items-center gap-10 px-5 md:px-14">
+        <div className="mt-0 md:mt-8 hidden space-y-5 md:space-y-0 md:flex items-center gap-10 px-5 md:px-14">
           {projectDatas.projects.slice(0, 1).map((data, k) => (
             <m.div
               variants={projectsAnimation}
@@ -168,6 +170,9 @@ export default function ProjectPage() {
               </CardContainer>
             </a>
           </m.div>
+        </div>
+        <div>
+          <ProjCertSlider />
         </div>
       </MouseEnterContextProvider>
     </div>
