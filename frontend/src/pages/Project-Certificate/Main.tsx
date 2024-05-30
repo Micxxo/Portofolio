@@ -43,7 +43,7 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className="snap-none md:snap-start h-auto md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-auto sm:overflow-hidden">
+    <div className="snap-start h-[800px] md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-x-auto md:overflow-hidden pb-32">
       <div className="px-5 md:px-0 md:pl-14 pt-20 md:pt-24">
         <m.h1
           variants={titleAnimation}
@@ -76,6 +76,7 @@ export default function ProjectPage() {
                 duration: 1,
                 delay: k * 0.1 + 0.1,
               }}
+              // className="hidden md:block"
             >
               <CardContainer
                 key={k}
@@ -110,6 +111,7 @@ export default function ProjectPage() {
                 duration: 1,
                 delay: k * 0.1 + 0.2,
               }}
+              className="hidden md:block"
             >
               <CardContainer
                 key={k}
@@ -141,13 +143,13 @@ export default function ProjectPage() {
             whileInView="inView"
             transition={{
               duration: 1,
-              delay: 0.4,
+              delay: 0.3,
             }}
           >
             <a href="/proj-cert">
               <CardContainer
                 index={3}
-                className="relative w-full md:w-[350px] h-fit md:h-[289px] rounded-xl border-2 border-white/20 p-6 text-white flex items-center justify-center flex-col"
+                className="relative w-full md:w-[350px] h-fit  md:h-[289px] rounded-xl border-2 border-white/20 p-6 text-white flex items-center justify-center flex-col"
               >
                 <CardItem
                   translateZ={50}

@@ -22,7 +22,7 @@ export default function Services() {
   };
 
   return (
-    <div className="text-white md:snap-start h-auto md:h-screen lg:h-[800px] md:max-h-screen bg-black pt-10 md:pt-14 relative">
+    <div className="text-white snap-start h-[800px] md:h-screen lg:h-[800px] md:max-h-screen bg-black pt-14 relative">
       <div className="block md:flex items-center justify-between">
         <div className="px-5 md:px-0 md:pl-14 pt-0 md:pt-10 w-full md:w-10/12 lg:w-1/2 ">
           {servicesData.map((data, key) => {
