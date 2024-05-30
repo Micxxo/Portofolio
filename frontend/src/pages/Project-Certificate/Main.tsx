@@ -43,7 +43,7 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className="snap-start h-[800px] md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-x-auto md:overflow-hidden pb-32">
+    <div className="snap-start h-[800px] md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-x-auto md:overflow-hidden pb-10">
       <div className="px-5 md:px-0 md:pl-14 pt-20 md:pt-24">
         <m.h1
           variants={titleAnimation}
