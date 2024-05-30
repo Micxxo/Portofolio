@@ -5,7 +5,6 @@ import "swiper/css/scrollbar";
 import { CardContainer } from "@/components/3dCard/CardContainer";
 import CardItem from "@/components/3dCard/CardItem";
 import { MouseEnterContextProvider } from "@/components/general/MouseEnterContext";
-import ProjCetSlider from "./Slider";
 import ProjCertSlider from "./Slider";
 
 export default function ProjectPage() {

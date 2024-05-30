@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 
 import { EffectCreative, Autoplay } from "swiper/modules";
-import CountUp from "react-countup";
 import { projectDatas } from "@/lib/helper/datas";
 import { CardContainer } from "@/components/3dCard/CardContainer";
 import CardItem from "@/components/3dCard/CardItem";
