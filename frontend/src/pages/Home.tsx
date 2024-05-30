@@ -76,7 +76,7 @@ export default function Home() {
                     duration: 1.5,
                   },
                 }}
-                className="relative -top-8  -z-0"
+                className="relative -top-10 md:-top-8  -z-0"
               >
                 <BottomShadowGreet />
               </m.div>
@@ -114,7 +114,7 @@ export default function Home() {
                     duration: 1.5,
                   },
                 }}
-                className="relative -top-8 left-0 md:left-4 -z-0"
+                className="relative -top-10 md:-top-8 left-0 md:left-4 -z-0"
               >
                 <BottomShadowGreet />
               </m.div>
@@ -152,7 +152,7 @@ export default function Home() {
                     duration: 1.5,
                   },
                 }}
-                className="relative -top-8 left-0 md:left-4 -z-0"
+                className="relative -top-10 md:-top-8 left-0 md:left-4 -z-0"
               >
                 <BottomShadowGreet />
               </m.div>
