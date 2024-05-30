@@ -43,18 +43,13 @@ export default function ProjectPage() {
   };
 
   return (
-    <div className="snap-start h-[800px] md:h-screen lg:h-[800px] max-h-screen text-white overflow-auto sm:overflow-hidden">
-      <div className="px-5 md:px-0 md:pl-14 pt-24">
+    <div className="snap-none md:snap-start h-auto md:h-screen lg:h-[800px] md:max-h-screen text-white overflow-auto sm:overflow-hidden">
+      <div className="px-5 md:px-0 md:pl-14 pt-20 md:pt-24">
         <m.h1
           variants={titleAnimation}
           initial="initial"
           whileInView="inView"
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            duration: 1,
-            delay: 0.2,
-          }}
+          transition={{ duration: 1, delay: 0.1 }}
           className="greeting-text-shadow text-xl sm:text-3xl md:text-4xl text-blue-50"
         >
           {projectDatas.title}
@@ -64,12 +59,7 @@ export default function ProjectPage() {
           variants={descAnimation}
           initial="initial"
           whileInView="inView"
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            duration: 1,
-            delay: 0.3,
-          }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           {projectDatas.description}
         </m.p>
@@ -83,12 +73,9 @@ export default function ProjectPage() {
               initial="initial"
               whileInView="inView"
               transition={{
-                type: "spring",
-                stiffness: 100,
                 duration: 1,
-                delay: k * 0.1 + 0.3,
+                delay: k * 0.1 + 0.1,
               }}
-              className="hidden lg:block"
             >
               <CardContainer
                 key={k}
@@ -120,17 +107,14 @@ export default function ProjectPage() {
               initial="initial"
               whileInView="inView"
               transition={{
-                type: "spring",
-                stiffness: 100,
                 duration: 1,
-                delay: k * 0.1 + 0.3,
+                delay: k * 0.1 + 0.2,
               }}
-              className="hidden md:block"
             >
               <CardContainer
                 key={k}
                 index={k + 2}
-                className="relative w-fit max-w-[380px] h-[289px] rounded-xl border-2 border-white/20 p-6 text-white"
+                className="relative w-full h-auto md:h-[289px] rounded-xl border-2 border-white/20 p-6 text-white"
               >
                 <CardItem translateZ={50} index={k + 2}>
                   <div className="flex items-center gap-2">
@@ -156,8 +140,6 @@ export default function ProjectPage() {
             initial="initial"
             whileInView="inView"
             transition={{
-              type: "spring",
-              stiffness: 100,
               duration: 1,
               delay: 0.4,
             }}
@@ -170,7 +152,7 @@ export default function ProjectPage() {
                 <CardItem
                   translateZ={50}
                   index={3}
-                  className="mx-auto w-fit text-3xl hidden md:block"
+                  className="mx-auto w-fit text-3xl "
                 >
                   <h1>More?</h1>
                 </CardItem>

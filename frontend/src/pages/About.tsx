@@ -47,7 +47,7 @@ export default function About() {
         initial="initial"
         whileInView="inView"
         transition={{ duration: 1, delay: 0.1 }}
-        className="pt-20 md:pt-32 px-5 md:px-14 greeting-text-shadow text-xl sm:text-2xl md:text-4xl w-full lg:w-[80%]  leading-8 sm:leading-[50px] text-blue-50"
+        className="pt-32 px-5 md:px-14 greeting-text-shadow text-xl sm:text-2xl md:text-4xl w-full lg:w-[80%]  leading-8 sm:leading-[50px] text-blue-50"
       >
         "{aboutData.title}"
       </m.blockquote>

@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className="drop-shadow-2xl flex items-center justify-center font-micrhroma snap-start h-[800px] md:h-screen lg:h-[800px] max-h-screen">
+    <div className="drop-shadow-2xl flex items-center justify-center font-micrhroma snap-start h-screen lg:h-[800px] max-h-screen">
       <div className="mt-0 md:mt-10">
         <AnimatePresence mode="wait">
           {greet === "name" && (
