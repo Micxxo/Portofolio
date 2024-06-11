@@ -57,7 +57,7 @@ export default function ProjCertSlider() {
               >
                 <CardContainer
                   index={key + 1}
-                  className="relative w-fit max-w-[380px] h-[289px] rounded-xl border-2 border-white/20 p-6 text-white"
+                  className="relative w-fit max-w-[380px] h-auto sm:h-[289px] rounded-xl border-2 border-white/20 p-6 text-white"
                 >
                   <CardItem translateZ={50} index={key + 1}>
                     <div className="flex items-center gap-2">
@@ -93,7 +93,7 @@ export default function ProjCertSlider() {
                   <CardContainer
                     key={k}
                     index={k + 2}
-                    className="relative w-full h-auto md:h-[289px] rounded-xl border-2 border-white/20 p-6 text-white"
+                    className="relative w-full h-auto sm:h-[289px] rounded-xl border-2 border-white/20 p-6 text-white"
                   >
                     <CardItem translateZ={50} index={k + 2}>
                       <div className="flex items-center gap-2">

@@ -3,7 +3,7 @@ import { skillDatas } from "@/lib/helper/datas";
 
 export default function Skills() {
   return (
-    <div className="text-white overflow-auto sm:overflow-hidden">
+    <div className="text-white overflow-auto md:overflow-hidden">
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-6 xl:grid-cols-12 w-fit rounded-sm ">
         {skillDatas.skills.map((data, key) => {
           return (

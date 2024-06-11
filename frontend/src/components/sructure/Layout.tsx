@@ -4,15 +4,17 @@ import { twMerge } from "tailwind-merge";
 
 export default function Layout({ children, className }: layoutProps) {
   return (
-    <section
-      className={twMerge(
-        "w-screen h-screen max-w-[1440px] xl:mx-auto bg-black  font-micrhroma snap-y snap-mandatory overflow-x-hidden",
-        className
-      )}
-    >
+    <section className="bg-black flex items-center justify-center font-micrhroma">
       <Navbar />
       {/* <Star /> */}
-      {children}
+      <div
+        className={twMerge(
+          "w-screen h-screen max-w-[2000px] xl:mx-auto bg-black font-micrhroma snap-y snap-mandatory overflow-x-hidden",
+          className
+        )}
+      >
+        {children}
+      </div>
     </section>
   );
 }
