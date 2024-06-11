@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function Layout({ children, className }: layoutProps) {
   return (
-    <section className="bg-black flex items-center justify-center font-micrhroma">
+    <section className="bg-black flex items-center justify-center font-micrhroma overflow-y-auto">
       <Navbar />
       {/* <Star /> */}
       <div

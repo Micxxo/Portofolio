@@ -22,7 +22,7 @@ export default function Navbar() {
       variants={containerAnimate}
       initial="initial"
       animate="animate"
-      className="fixed top-0 w-full max-w-[1440px] xl:mx-auto p-5 md:py-8 md:px-14 z-10 "
+      className="fixed top-0 w-full max-w-[2000px] xl:mx-auto p-5 md:py-8 md:px-14 z-10 "
     >
       <div className="flex items-center justify-between">
         <a href="/">
